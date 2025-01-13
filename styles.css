@@ -1,18 +1,47 @@
+/* styles.css */
+
+/* Globale Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    padding-top: 70px; /* Platz für die fixe Navbar */
 }
-header, footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+
+header {
+    background: url('images/header-bg.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-main {
-    padding: 20px;
+
+header .container {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
 }
+
 section {
-    margin-bottom: 20px;
+    padding: 60px 0;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Karten-Styles */
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
 }
